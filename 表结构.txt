@@ -1,0 +1,14 @@
+
+--
+-- 表的结构 `cdat`
+--
+
+CREATE TABLE IF NOT EXISTS `cdat` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `cd` char(99) DEFAULT '110',
+  `localt` char(99) DEFAULT '110',
+  `snosat` text NOT NULL,
+  `rnorec` text NOT NULL,
+  `kefu` char(99) DEFAULT '1171628833',
+  PRIMARY KEY (`id`)
+) 

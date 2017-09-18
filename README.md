@@ -16,6 +16,7 @@ APP内所有的API调用自轻淘客，很不错的一个网站，最起码api�
 
 实现原理：代理在web页面填写信息点击提交并得到一个专属码保存到数据库中（logint.php），客户端输入专属码的时候向服务器查询该专属码，该返回该专属码的代理信息(serlno.php)
 
+成品试用:http://www.aiboyy.pw/lingjuan/index.html
 
 流程图如下
 ![image](https://github.com/CrackgmKey/lingJuan/blob/master/tupian/jdfw.gif)

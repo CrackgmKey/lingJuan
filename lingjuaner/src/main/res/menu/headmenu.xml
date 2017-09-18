@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.arbo.hero.LoginActivity">
+    <item
+        android:id="@+id/camera"
+        android:title="拍照"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/gallery"
+        android:title="从相册中选取"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cancel"
+        android:title="取消"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

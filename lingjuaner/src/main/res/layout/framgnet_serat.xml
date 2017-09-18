@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:columnWidth="30dp"
+        android:headerDividersEnabled="false"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+        ptr:ptrMode="both"
+        ptr:ptrDrawable="@drawable/icon_me_setting" />
+
+    <LinearLayout android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="match_parent" android:id="@+id/buju">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            />
+
+        <TextView android:text="正在加载，请稍后"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  android:textSize="22sp"/>
+    </LinearLayout>
+</LinearLayout>

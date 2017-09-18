@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:layout_width="match_parent"
+        android:id="@+id/lun_id"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:text="立即进入"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_bai"
+        android:layout_marginBottom="@dimen/y40"
+        android:layout_marginLeft="@dimen/y90"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout android:id="@+id/include11"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="@dimen/y25">
+        <LinearLayout  android:orientation="horizontal" android:background="#ffff" android:layout_width="match_parent" android:layout_height="@dimen/x90">
+            <EditText  android:textSize="14.0sp"
+                android:id="@+id/et_searchs" android:layout_margin="@dimen/y3"
+                android:padding="@dimen/y3" android:layout_marginLeft="@dimen/y10"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical" android:layout_weight="16"
+                android:focusable="true"    android:background="@drawable/edit_bg"
+                android:focusableInTouchMode="true"
+                android:layout_height="match_parent"  android:hint="请输入搜索内容" />
+            <TextView
+                android:id="@+id/te_sousuo"
+                android:layout_gravity="center_vertical" android:layout_width="@dimen/y23" android:layout_height="@dimen/y13" android:layout_marginRight="@dimen/y1"  android:text="搜索" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <co.lujun.androidtagview.TagContainerLayout
+        android:id="@+id/tagcontainerLayout2"
+        android:layout_below="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:container_background_color="#00000000"
+        app:container_border_color="#ffffff"
+        app:container_border_radius="4dp"
+        app:container_border_width="7dp"
+        app:container_enable_drag="true"
+        app:horizontal_interval="10dp"
+        app:tag_clickable="false"
+        app:tag_theme="random"
+        app:vertical_interval="10dp" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:columnWidth="30dp"
+        android:headerDividersEnabled="false"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+        ptr:ptrMode="both"
+
+        ptr:ptrDrawable="@drawable/icon_me_setting"
+        android:layout_below="@+id/include11"/>
+
+    <LinearLayout android:gravity="center"
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="match_parent" android:id="@+id/buju"
+        android:visibility="gone"
+        android:layout_below="@+id/include11">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            />
+
+        <TextView android:text="正在加载，请稍后"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  android:textSize="22sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:gravity="center"
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="match_parent" android:id="@+id/buju2"
+        android:visibility="gone"
+        android:layout_below="@+id/include11">
+
+        <ImageView
+            android:id="@+id/image_jia"
+            android:src="@mipmap/pechion_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView android:text="好像什么都没搜索到!"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"  android:textSize="22sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

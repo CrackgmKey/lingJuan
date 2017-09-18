@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/iamges"
+        android:visibility="visible"
+       />
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="特价秒杀"
+            android:drawableTop="@mipmap/btn_99_free_data_img_select"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="每日TOP100"
+            android:drawableTop="@mipmap/btn_famous_data_img"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="必拍"
+            android:drawableTop="@mipmap/btn_jhs_data_img"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:background="@mipmap/tubgs"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="随时更新"
+            android:padding="7dp"
+            android:textSize="9sp"
+            android:drawableLeft="@mipmap/icon_start_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="无门槛优惠券"
+            android:padding="7dp"
+            android:textSize="9sp"
+            android:drawableLeft="@mipmap/icon_start_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="全场包邮"
+            android:padding="7dp"
+            android:textSize="9sp"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@mipmap/icon_start_normal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<!--分类商品-->
+    <GridLayout
+        android:columnCount="1"
+        android:visibility="visible"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao1"
+                    android:src="@mipmap/nanz"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="男装"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao2"
+                    android:src="@mipmap/nvz"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="女装"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao3"
+                    android:src="@mipmap/neiy"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="内衣"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao4"
+                    android:src="@mipmap/shuma"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="数码"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao5"
+                    android:src="@mipmap/riy"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="日用"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao6"
+                    android:src="@mipmap/meiz"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="美妆"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao7"
+                    android:src="@mipmap/xiebao"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="鞋包"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao8"
+                    android:src="@mipmap/meis"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="美食"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao9"
+                    android:src="@mipmap/went"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="文体"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--我的足迹-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tubiao10"
+                    android:src="@mipmap/muy"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="母婴"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </GridLayout>
+
+    <View
+        android:background="#E9E9E9"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <!--分类下面的-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ff22"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <!--京东超烦-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/jddd"
+                android:layout_weight="4"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#E9E9E9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <ImageView
+                android:src="@mipmap/mall"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:background="#E9E9E9"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <!--右侧9.9包邮的-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/baoyou"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="#E9E9E9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <ImageView
+                android:src="@mipmap/fengding"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="#E9E9E9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <ImageView
+                android:src="@mipmap/dapaio"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="#E9E9E9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

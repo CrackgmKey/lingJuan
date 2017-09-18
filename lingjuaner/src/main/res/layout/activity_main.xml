@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.lingjuan.app.activity.MainActivity">
+
+    <include android:id="@+id/include11" layout="@layout/base_title"
+        android:visibility="visible"  />
+
+    <android.support.v4.view.ViewPager android:id="@+id/fl_id"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+     android:layout_above="@+id/rg_zu" android:layout_below="@+id/include11"/>
+
+    <RadioGroup android:id="@+id/rg_zu" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:orientation="horizontal" android:padding="6dp"
+        android:background="#FFFFFF" >
+        <RadioButton android:id="@+id/rb_weixin" android:text="主页"
+            android:button="@null" android:drawableTop="@drawable/wweixin"
+            android:gravity="center"  android:checked="true"
+            android:layout_weight="1"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="#FFFFFF" />
+
+        <RadioButton android:id="@+id/rb_wo" android:text="包邮"
+            android:visibility="visible"
+            android:button="@null"  android:drawableTop="@drawable/wode"
+            android:gravity="center" android:background="#FFFFFF"
+            android:layout_weight="1"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton android:id="@+id/rb_faxian" android:text="优品"
+            android:button="@null" android:drawableTop="@drawable/faxian"
+            android:gravity="center" android:background="#FFFFFF"
+            android:layout_weight="1"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="visible"/>
+
+        <RadioButton android:id="@+id/rb_jiu" android:text="我的"
+            android:button="@null" android:drawableTop="@drawable/dongtai"
+            android:gravity="center" android:background="#FFFFFF"
+            android:layout_weight="1"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

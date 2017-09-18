@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="163.0dip"
+    android:layout_height="99.0dip"
+    android:background="@drawable/jd_toast_common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/jd_toast_image"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/jd_toast_txt"
+        android:layout_width="163.0dip"
+        android:layout_height="20dp"
+        android:layout_marginBottom="25.0dip"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:text="正在加载"
+        android:paddingRight="10.0dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

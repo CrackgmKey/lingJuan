@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include android:id="@+id/include11" layout="@layout/base_title"
+        android:visibility="visible"  />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_zonghe"
+            android:layout_weight="1"
+            android:text="综合"
+            android:gravity="center"
+            android:textColor="#F06F1D"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:text="销量"
+            android:id="@+id/tv_xiaoliang"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="劵后价"
+            android:id="@+id/tv_juanhoujia"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="折扣"
+            android:id="@+id/tv_zhekou"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_weight="0.3"
+            android:id="@+id/poopwin"
+            android:src="@mipmap/icon_hot_rocket_select"
+            android:layout_width="20dp"
+
+            android:layout_height="27dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_weizhi"
+        android:background="#CFD8DA"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:columnWidth="30dp"
+        android:headerDividersEnabled="false"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+        ptr:ptrMode="both"
+        ptr:ptrDrawable="@drawable/icon_me_setting" />
+
+</LinearLayout>

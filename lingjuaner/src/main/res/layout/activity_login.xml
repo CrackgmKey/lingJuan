@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/buttlbar"
+        android:background="#FEF3A9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25">
+
+        <TextView android:text="用户登录"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="请使用合作账号登录"
+            android:gravity="center"
+            android:textColor="#0B2E76"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/y12"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_imqq"
+                android:src="@mipmap/imqq"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/imwx"
+                android:id="@+id/image_imwx"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/imwb"
+                android:layout_weight="1"
+                android:id="@+id/image_imwb"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

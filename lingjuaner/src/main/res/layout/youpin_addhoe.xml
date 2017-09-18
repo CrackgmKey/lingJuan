@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:padding="@dimen/y6"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/meiri"
+            android:text="每日TOP100"
+            android:drawableTop="@mipmap/btn_famous_data_img"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tejia"
+            android:text="特价秒杀"
+            android:drawableTop="@mipmap/btn_99_free_data_img_select"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/baokuan"
+            android:text="爆款商品"
+            android:drawableTop="@mipmap/btn_jhs_data_img"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <View
+        android:background="#F0EDED"
+        android:layout_marginTop="@dimen/y2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"/>
+
+
+
+</LinearLayout>

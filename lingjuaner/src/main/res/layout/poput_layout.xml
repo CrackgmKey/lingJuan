@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="#dadada"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+
+        <TextView
+            android:text="请选择要搜索商品分类"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/fenlei1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#2d2c2c"
+                />
+            <Button
+                android:background="#f0f0f0"
+                android:id="@+id/fenlei2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男装"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/fenlei3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数码家电"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#2d2c2c"
+                />
+            <Button
+                android:background="#f0f0f0"
+                android:id="@+id/fenlei4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美妆"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/fenlei5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鞋包"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#2d2c2c"
+                />
+            <Button
+                android:background="#f0f0f0"
+                android:id="@+id/fenlei6"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="母婴"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/fenlei7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文体"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#2d2c2c"
+                />
+            <Button
+                android:background="#f0f0f0"
+                android:id="@+id/fenlei8"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女装"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/fenlei9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内衣"
+                android:layout_weight="1"
+                android:background="#f0f0f0"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#2d2c2c"
+                />
+            <Button
+                android:background="#f0f0f0"
+                android:id="@+id/fenlei10"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="居家"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2d2c2c"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:orientation="vertical">
+
+        <Button
+            android:background="#f0f0f0"
+            android:id="@+id/fenlei11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            />
+    </LinearLayout>
+</LinearLayout>

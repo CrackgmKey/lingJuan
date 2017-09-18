@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:drawable="@mipmap/btn_tab_spc_sale_select"></item>
+    <item android:state_checked="false" android:drawable="@mipmap/btn_tab_spc_sale_normal"></item>
+
+</selector>

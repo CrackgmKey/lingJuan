@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="#E94376"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView android:text="请输入您的专属码"
+            android:textSize="23sp"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" android:background="@drawable/bg_pwd" android:focusable="true"
+        android:focusableInTouchMode="true" android:layout_width="match_parent"
+        android:layout_height="50dp" android:layout_marginTop="15dp">
+
+        <EditText  android:textSize="14.0sp" android:layout_gravity="center_vertical"
+            android:id="@+id/et_registerPhone" android:background="@null"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" android:hint="请输入您的邀请码" android:singleLine="true"
+            android:maxLength="11"
+            android:layout_weight="6.0" android:inputType="textPersonName" />
+        <ImageView android:layout_gravity="center_vertical"
+            android:id="@+id/iv_loginPhone_cancle"
+            android:visibility="invisible" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="10dp"
+              />
+    </LinearLayout>
+
+    <Button android:text="登录"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:id="@+id/dialog_btn_pay"
+        android:background="@drawable/bg_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

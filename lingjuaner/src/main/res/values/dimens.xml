@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="txt_8">8.0sp</dimen>
+    <dimen name="txt_10">10.0sp</dimen>
+    <dimen name="txt_12">12.0sp</dimen>
+    <dimen name="txt_14">14.0sp</dimen>
+    <dimen name="txt_16">16.0sp</dimen>
+    <dimen name="txt_18">18.0sp</dimen>
+    <dimen name="txt_20">20.0sp</dimen>
+    <dimen name="txt_22">22.0sp</dimen>
+    <dimen name="txt_24">24.0sp</dimen>
+    <dimen name="txt_26">26.0sp</dimen>
+    <dimen name="txt_28">28.0sp</dimen>
+</resources>

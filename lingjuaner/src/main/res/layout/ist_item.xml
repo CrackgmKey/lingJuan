@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:padding="3dp" android:src="@mipmap/img_default_user_head"
+        android:layout_width="125dp" android:layout_height="125dp" />
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent" android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/buju1"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/tmall_ico" android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/sp_title"  android:layout_width="match_parent"
+                android:layout_margin="3dp"  android:text="中老年女装套装上衣40-50岁妈妈装夏装短袖雪纺衫2017新款两件套"
+                android:textColor="#000000" android:textSize="11sp"
+                android:maxLines="2"
+                android:layout_marginRight="20dp" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:text="月销2000" android:layout_below="@+id/buju1"
+            android:id="@+id/sp_xiaoliang"
+            android:layout_width="wrap_content"    android:textSize="10sp"
+            android:layout_height="wrap_content"  android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="评分:4.9" android:layout_alignParentRight="true"
+            android:layout_below="@+id/buju1"   android:id="@+id/sp_pingfen"
+            android:layout_width="wrap_content"    android:textSize="10sp"
+            android:layout_height="wrap_content"  android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="劵10元"
+                android:layout_weight="1"
+                android:textColor="#FD8144"
+                android:drawableLeft="@mipmap/quan_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_juan" />
+
+            <RelativeLayout
+                    android:layout_weight="0.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="19.99"
+                        android:gravity="center"
+                        android:id="@+id/sp_yuanjia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="--------"
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            <TextView
+                android:text="￥9.90"
+                android:layout_weight="0.1"
+                android:textColor="#FD8144"
+                android:textSize="18sp"
+                android:id="@+id/sp_xianjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

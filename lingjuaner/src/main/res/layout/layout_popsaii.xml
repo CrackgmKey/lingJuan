@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    >
+
+
+    <LinearLayout
+    android:padding="@dimen/y10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView   android:text="女装"
+        android:id="@+id/leibie1"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView   android:text="男装"
+        android:layout_weight="1"
+        android:id="@+id/leibie2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView   android:text="内衣"
+        android:layout_weight="1"
+        android:id="@+id/leibie3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView   android:text="母婴"
+        android:layout_weight="1"
+        android:id="@+id/leibie4"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/y10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView   android:text="化妆品"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/leibie5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text="居家"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/leibie6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text="鞋包配饰"
+            android:layout_weight="1"
+            android:id="@+id/leibie7"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text="美食"
+            android:layout_weight="1"
+            android:id="@+id/leibie8"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/y10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView   android:text="文体车品"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/leibie9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text="数码家电"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/leibie10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text=""
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView   android:text=""
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#C7C7C7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</LinearLayout>

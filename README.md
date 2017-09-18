@@ -23,7 +23,7 @@ APP内所有的API调用自轻淘客，很不错的一个网站，最起码api�
 
 首页UI
 
-![image](https://github.com/CrackgmKey/lingJuan/blob/master/tupian/1.jpg)
+![image](https://github.com/CrackgmKey/lingJuan/blob/master/tupian/1.png)
 
 商品UI
 

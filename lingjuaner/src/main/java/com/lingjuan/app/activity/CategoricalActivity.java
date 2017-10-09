@@ -223,7 +223,8 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
                 if(isOnSucc){
                     ListYtpe = 2;
                     getRequestdata(type);
-                    mapArrayList.clear();
+                    if(mapArrayList != null)
+                        mapArrayList.clear();
                     //设置选择颜色
                     getTextCorlos(R.color.xuanzhong,R.color.weixuan,R.color.weixuan,R.color.weixuan);
                 }else {
@@ -234,7 +235,8 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
                 if(isOnSucc){
                     ListYtpe = 3;
                     getRequestdata(type);
-                    mapArrayList.clear();
+                    if(mapArrayList != null)
+                        mapArrayList.clear();
                     //设置选择颜色
                     getTextCorlos(R.color.weixuan,R.color.xuanzhong,R.color.weixuan,R.color.weixuan);
                 }else {
@@ -245,7 +247,8 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
                 if(isOnSucc){
                     ListYtpe = 4;
                     getRequestdata(type);
-                    mapArrayList.clear();
+                    if(mapArrayList != null)
+                        mapArrayList.clear();
                     //设置选择颜色
                     getTextCorlos(R.color.weixuan,R.color.weixuan,R.color.xuanzhong,R.color.weixuan);
                 }else {
@@ -256,7 +259,8 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
                 if(isOnSucc){
                     ListYtpe = 4;
                     getRequestdata(type);
-                    mapArrayList.clear();
+                    if(mapArrayList != null)
+                        mapArrayList.clear();
                     //设置选择颜色
                     getTextCorlos(R.color.weixuan,R.color.weixuan,R.color.weixuan,R.color.xuanzhong);
                 }else {

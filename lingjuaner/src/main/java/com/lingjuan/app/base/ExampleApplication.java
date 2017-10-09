@@ -27,6 +27,7 @@ import cn.jpush.android.api.JPushInterface;
 public class ExampleApplication extends Application {
     public static boolean IsLogin = false;
     public static boolean IsLogind = false;
+    public static Context context ;
     public static Context AppContent ;
     public static final String BORDA_ID = "com.lingjuan.app";
     private static final String TAG = "JIGUANG-Example";
@@ -36,6 +37,7 @@ public class ExampleApplication extends Application {
     public void onCreate() {    	     
     	 Logger.d(TAG, "[ExampleApplication] onCreate");
          super.onCreate();
+        context = this;
          JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
          JPushInterface.init(this);     		// 初始化 JPush
         //传入参数APPID和全局Context上下文

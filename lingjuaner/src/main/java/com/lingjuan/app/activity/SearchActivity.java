@@ -210,7 +210,11 @@ public class SearchActivity extends BaseActivity implements View.OnClickListener
      * 第二次请求网络数据
      */
     private void getErRequestdata(int path,String nei,int fenlei) {
-        popupWindow.dismiss();
+       if(popupWindow != null){
+           if(popupWindow.isShowing()){
+               popupWindow.dismiss();
+           }
+       }
         backgroundAlpha(1f);
         HttpMethods.BASE_URL = "http://openapi.qingtaoke.com/";
         HttpMethods.getInstance().getSOuSuo(new Subscriber<String>() {

@@ -74,7 +74,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
@@ -89,32 +88,25 @@ dependencies {
     compile 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.203'
     compile 'com.alibaba.sdk.android:alibc_trade_biz:3.1.1.203'
     compile 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.203'
-
     //登陆
     compile 'com.ali.auth.sdk:alibabauth_core:1.1.4@jar'
     compile 'com.ali.auth.sdk:alibabauth_ui:1.1.4@aar'
     compile 'com.ali.auth.sdk:alibabauth_ext:1.1.4@jar'
-
     //安全基础
     compile 'com.taobao.android:securityguardaar3:5.1.81@aar'
-
     //Mtop网关
     compile 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
-
     //applink
     compile 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.0'
-
     //UT
     compile 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
     compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
-
     //热搜显示
     compile 'co.lujun:androidtagview:1.0.0'
     //TX修复
-   // compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:crashreport:latest.release'
     //网络请求
     compile 'com.android.volley:volley:1.0.0'
-
     //加载图示
     compile 'com.kaopiz:kprogresshud:1.0.1'
     //依赖

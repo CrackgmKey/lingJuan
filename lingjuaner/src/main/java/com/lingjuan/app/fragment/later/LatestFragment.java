@@ -42,6 +42,7 @@ import com.lingjuan.app.adapter.LatesAdapter;
 import com.lingjuan.app.adapter.YouPinAdapter;
 import com.lingjuan.app.api.Iben;
 import com.lingjuan.app.base.BaseFrament;
+import com.lingjuan.app.base.ExampleApplication;
 import com.lingjuan.app.uitls.DialogUtil;
 import com.lingjuan.app.uitls.HttpMethods;
 import com.lingjuan.app.uitls.SharedPreferenceUtil;
@@ -138,7 +139,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
                             @Override
                             public void run() {
                                 mPullRefreshGridView.onRefreshComplete();
-                                Toast.makeText(getActivity(), "已经到底了", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ExampleApplication.context, "已经到底了", Toast.LENGTH_SHORT).show();
                             }
                         },6000);
                     }
@@ -265,7 +266,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
 
             @Override
             public void onError(Throwable e) {
-                Toast.makeText(getActivity(), "请求失败,请稍后尝试", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), "请求失败,请稍后尝试", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -304,7 +305,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
             @Override
             public void onError(Throwable e) {
                 hud.dismiss();
-                Toast.makeText(getActivity(), "请求失败,请稍后尝试", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "请求失败,请稍后尝试", Toast.LENGTH_SHORT).show();
             }
 
             @Override

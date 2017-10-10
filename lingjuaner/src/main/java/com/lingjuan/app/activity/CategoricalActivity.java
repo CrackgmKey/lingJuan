@@ -79,6 +79,46 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
 
     @Override
     protected void init() {
+
+    }
+
+    /**
+     * 二次请求网络
+     * @param path 页数
+     */
+    private void getErCiRequestdata(int path) {
+        HttpMethods.BASE_URL = "http://openapi.qingtaoke.com/";
+        HttpMethods.getInstance().getJiuJIud(new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+            }
+
+            @Override
+            public void onNext(String s) {
+                mapArrayList.addAll(getArrJson(s));
+                latesAdapter.setMapArrayList(mapArrayList);
+                latesAdapter.notifyDataSetChanged();
+                mPullRefreshGridView.onRefreshComplete();
+            }
+        }, path,type,ListYtpe);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            // 有些情况下需要先清除透明flag
+            window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_OVERSCAN);
+            window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_ATTACHED_IN_DECOR);
+            window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
+        }
+        setContentView(R.layout.activity_sefne);
         ButterKnife.bind(this);
         setFenLei();
         tvZonghe.setOnClickListener(this);
@@ -171,46 +211,6 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
 
             }
         });
-
-    }
-
-    /**
-     * 二次请求网络
-     * @param path 页数
-     */
-    private void getErCiRequestdata(int path) {
-        HttpMethods.BASE_URL = "http://openapi.qingtaoke.com/";
-        HttpMethods.getInstance().getJiuJIud(new Subscriber<String>() {
-            @Override
-            public void onCompleted() {
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-            }
-
-            @Override
-            public void onNext(String s) {
-                mapArrayList.addAll(getArrJson(s));
-                latesAdapter.setMapArrayList(mapArrayList);
-                latesAdapter.notifyDataSetChanged();
-                mPullRefreshGridView.onRefreshComplete();
-            }
-        }, path,type,ListYtpe);
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            // 有些情况下需要先清除透明flag
-            window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_OVERSCAN);
-            window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_ATTACHED_IN_DECOR);
-            window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
-        }
-        setContentView(R.layout.activity_sefne);
 
     }
 

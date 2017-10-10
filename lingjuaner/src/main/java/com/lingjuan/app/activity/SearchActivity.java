@@ -72,15 +72,6 @@ public class SearchActivity extends BaseActivity implements View.OnClickListener
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sear);
-    }
-
-    @Override
-    protected int getLayout() {
-        return R.layout.activity_sear;
-    }
-
-    @Override
-    protected void init() {
         mTagContainerLayout2 = (TagContainerLayout) findViewById(R.id.tagcontainerLayout2);
         mTagContainerLayout2.setTags(Iben.mRenSou);
         mTagContainerLayout2.setOnTagClickListener(new TagView.OnTagClickListener() {
@@ -153,6 +144,16 @@ public class SearchActivity extends BaseActivity implements View.OnClickListener
             }
         });
         //getRequestdata();
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_sear;
+    }
+
+    @Override
+    protected void init() {
+
     }
 
 

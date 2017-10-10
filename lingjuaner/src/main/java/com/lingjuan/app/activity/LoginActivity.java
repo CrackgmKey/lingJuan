@@ -50,6 +50,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        mTencent = ExampleApplication.mTencent;
+        imageImqq = (ImageView) findViewById(R.id.image_imqq);
+        imageImwx = (ImageView) findViewById(R.id.image_imwb);
+        imageImwb = (ImageView) findViewById(R.id.image_imwx);
+        imageImqq.setOnClickListener(this);
+        imageImwx.setOnClickListener(this);
+        imageImwb.setOnClickListener(this);
     }
 
     @Override
@@ -65,13 +72,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     protected void init() {
-        mTencent = ExampleApplication.mTencent;
-        imageImqq = (ImageView) findViewById(R.id.image_imqq);
-        imageImwx = (ImageView) findViewById(R.id.image_imwb);
-        imageImwb = (ImageView) findViewById(R.id.image_imwx);
-        imageImqq.setOnClickListener(this);
-        imageImwx.setOnClickListener(this);
-        imageImwb.setOnClickListener(this);
+
     }
 
 

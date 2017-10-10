@@ -59,15 +59,6 @@ public class WelActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wei_aiviti);
-    }
-
-    @Override
-    protected int getLayout() {
-        return R.layout.wei_aiviti;
-    }
-
-    @Override
-    protected void init() {
         Intent intent = new Intent(WelActivity.this,NetWorkStateService.class);
         startService(intent);
         button = (Button) findViewById(R.id.button);
@@ -98,11 +89,11 @@ public class WelActivity extends BaseActivity {
             @Override
             public void onPageSelected(int position) {
                 System.out.println("111111111111111111111111"+position);
-                 if(position == urls.size()-1){
+                if(position == urls.size()-1){
                     button.setVisibility(View.VISIBLE);
                 }else {
-                     button.setVisibility(View.GONE);
-                 }
+                    button.setVisibility(View.GONE);
+                }
             }
 
             @Override
@@ -136,6 +127,16 @@ public class WelActivity extends BaseActivity {
         getRequestdata();
         getRequestdataReSou();
         getLunBo();
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.wei_aiviti;
+    }
+
+    @Override
+    protected void init() {
+
     }
 
     /**

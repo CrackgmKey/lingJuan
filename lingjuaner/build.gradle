@@ -11,7 +11,7 @@ android {
             aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             //选择要添加的对应cpu类型的.so库（不需要的删除即可）。
@@ -65,7 +65,6 @@ repositories {
         dirs 'libs'
     }
 }
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

@@ -95,15 +95,7 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
             window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
         }
         setContentView(R.layout.activity_first);
-    }
 
-    @Override
-    protected int getLayout() {
-        return R.layout.activity_first;
-    }
-
-    @Override
-    protected void init() {
         //设置标题
         setQian100();
         tvZonghe = (TextView) findViewById(R.id.tv_zonghe);
@@ -209,6 +201,16 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
 
             }
         });
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_first;
+    }
+
+    @Override
+    protected void init() {
+
     }
 
     /**

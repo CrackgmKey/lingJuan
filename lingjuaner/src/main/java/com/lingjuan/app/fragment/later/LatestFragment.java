@@ -97,7 +97,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
         }
     };
     private KProgressHUD hud;
-
+    private  AlertDialog adDialog;
 
     /**
      * Fragment传值
@@ -367,7 +367,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
 
             @Override
             public void onError(Throwable e) {
-                Toast.makeText(getActivity(), "服务器发送错误!,请联系管理员", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ExampleApplication.context, "服务器发送错误!,请联系管理员", Toast.LENGTH_SHORT).show();
                 //getActivity().finish();
             }
 
@@ -768,13 +768,13 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
      * PID的获取
      */
     private void getYaoqingM(String name) {
-        hud = KProgressHUD.create(getActivity())
+      /*  hud = KProgressHUD.create(getActivity())
                 .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
                 .setLabel("疯狂加载中")
                 .setCancellable(true)
                 .setAnimationSpeed(2)
                 .setDimAmount(0.5f)
-                .show();
+                .show();*/
         HttpMethods.BASE_URL = "http://www.aiboyy.pw/";
         HttpMethods.getInstance().getPid(new Subscriber<String>() {
             @Override
@@ -783,7 +783,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
 
             @Override
             public void onError(Throwable e) {
-                hud.dismiss();
+               // hud.dismiss();
                 Iben.YURL = (String) SharedPreferenceUtil.get(getActivity(),"pid","0");
                 Iben.QQ = (String) SharedPreferenceUtil.get(getActivity(),"qq","123");
                 //SharedPreferenceUtil.put(getActivity(),"qq",Iben.QQ);
@@ -791,7 +791,7 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
 
             @Override
             public void onNext(String s) {
-                hud.dismiss();
+               // hud.dismiss();
                 try {
                     JSONArray jsonObject2 = new JSONArray(s);
                     JSONObject jsonObject = jsonObject2.getJSONObject(0);
@@ -825,14 +825,14 @@ public class LatestFragment extends BaseFrament implements View.OnClickListener 
         Button bt = (Button) view.findViewById(R.id.dialog_btn_pay);
         final EditText editName = (EditText) view.findViewById(R.id.et_registerPhone);
         builder.setView(view);
-        final AlertDialog ad = builder.create();
-        ad.show();
+        adDialog = builder.create();
+        adDialog.show();
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Name = editName.getText().toString();
                 if(!Name.equals("") && Name.trim().length() != 0 ){
-                    getYaoqingM(Name,ad);
+                    getYaoqingM(Name,adDialog);
                 }else {
                     Toast.makeText(getActivity(), "请输入内容在点击,谢谢", Toast.LENGTH_SHORT).show();
                 }

@@ -128,15 +128,6 @@ public class PurchaseActivity extends BaseActivity implements View.OnClickListen
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purchase_activity);
-    }
-
-    @Override
-    protected int getLayout() {
-        return R.layout.purchase_activity;
-    }
-
-    @Override
-    protected void init() {
         exParams = new HashMap<>();
         exParams.put("isv_code", "appisvcode");
         exParams.put("alibaba", "阿里巴巴");//自定义参数部分，可任意增删改
@@ -168,6 +159,16 @@ public class PurchaseActivity extends BaseActivity implements View.OnClickListen
         buttChakan.setOnClickListener(this);
         urls = Duwenjian.getString(this,"wwbview.html");
 
+
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.purchase_activity;
+    }
+
+    @Override
+    protected void init() {
 
     }
 

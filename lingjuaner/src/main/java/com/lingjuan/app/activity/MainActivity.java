@@ -71,15 +71,6 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-    }
-
-    @Override
-    protected int getLayout() {
-        return R.layout.activity_main;
-    }
-
-    @Override
-    protected void init() {
 
         ExampleApplication.AppContent = this;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -140,7 +131,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void getOncilick(View view) {
                 //shareText(MainActivity.this,qqShareListener);
-               // setFenXiang(view);
+                // setFenXiang(view);
                 shareOnlyImageOnQQ(view);
             }
         });
@@ -152,6 +143,16 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this,SearchActivity.class));
             }
         });
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void init() {
+
     }
 
 

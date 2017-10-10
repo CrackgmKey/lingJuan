@@ -210,6 +210,7 @@ public class CategoricalActivity extends BaseActivity implements View.OnClickLis
             window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_ATTACHED_IN_DECOR);
             window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
         }
+        setContentView(R.layout.activity_sefne);
 
     }
 

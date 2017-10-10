@@ -58,6 +58,7 @@ public class WelActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.wei_aiviti);
     }
 
     @Override

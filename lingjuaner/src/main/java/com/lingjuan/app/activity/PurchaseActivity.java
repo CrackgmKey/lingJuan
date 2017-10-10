@@ -127,7 +127,7 @@ public class PurchaseActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.purchase_activity);
     }
 
     @Override

@@ -20,6 +20,8 @@ APP内所有的API调用自轻淘客，很不错的一个网站，最起码api�
 
 更新日志：
 2017年10月10日11:37:34：更新1.0.2，修复少数用户崩溃问题，优化细节
+
+
 流程图如下
 ![image](https://github.com/CrackgmKey/lingJuan/blob/master/tupian/jdfw.gif)
 

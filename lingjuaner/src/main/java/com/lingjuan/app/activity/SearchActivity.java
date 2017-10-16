@@ -71,7 +71,7 @@ public class SearchActivity extends BaseActivity implements View.OnClickListener
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sear);
+       // setContentView(R.layout.activity_sear);
         mTagContainerLayout2 = (TagContainerLayout) findViewById(R.id.tagcontainerLayout2);
         mTagContainerLayout2.setTags(Iben.mRenSou);
         mTagContainerLayout2.setOnTagClickListener(new TagView.OnTagClickListener() {

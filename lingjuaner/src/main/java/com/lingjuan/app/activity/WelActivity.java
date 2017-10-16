@@ -58,7 +58,7 @@ public class WelActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wei_aiviti);
+        //setContentView(R.layout.wei_aiviti);
         Intent intent = new Intent(WelActivity.this,NetWorkStateService.class);
         startService(intent);
         button = (Button) findViewById(R.id.button);

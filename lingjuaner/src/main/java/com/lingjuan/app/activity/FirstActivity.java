@@ -94,7 +94,7 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
             window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_ATTACHED_IN_DECOR);
             window.setStatusBarColor(getResources().getColor(R.color.colorAccent));
         }
-        setContentView(R.layout.activity_first);
+        //setContentView(R.layout.activity_first);
 
         //设置标题
         setQian100();

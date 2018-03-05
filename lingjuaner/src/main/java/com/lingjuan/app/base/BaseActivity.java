@@ -27,7 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.base_title);
+        setContentView(getLayout());
         //输入框
         relativeLayout = (RelativeLayout) findViewById(R.id.include11dsw);
         //文字

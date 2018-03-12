@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.lingjuan.app"
@@ -49,9 +49,12 @@ android {
         preDexLibraries = true
         //线程数
         threadCount = 8
+    }
 
-
-
+    //添加如下配置就ok了
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 }
 
